@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-FindapairMe::Application.load_tasks
+Findapair::Application.load_tasks

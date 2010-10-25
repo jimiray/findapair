@@ -81,6 +81,7 @@ GEM
     rspec-rails (2.0.1)
       rspec (~> 2.0.0)
     shoulda (2.11.3)
+    simple_form (1.2.2)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -91,15 +92,18 @@ GEM
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
       rack-test (>= 0.5.3)
+    will_paginate (3.0.pre2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  devise (= 1.1.2)
+  devise
   fixjour
   pg
   rails (= 3.0.1)
   rspec-rails
   shoulda
+  simple_form
   webrat
+  will_paginate

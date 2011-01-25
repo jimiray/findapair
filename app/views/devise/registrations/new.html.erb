@@ -5,17 +5,15 @@
 
   <p><%= f.label :name %><br />
   <%= f.text_field :name %></p>
-
+  <p><%= f.label :username %><br />
+  <%= f.text_field :username %></p>
   <p><%= f.label :email %><br />
   <%= f.text_field :email %></p>
-
   <p><%= f.label :password %><br />
   <%= f.password_field :password %></p>
-
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Sign up" %></p>
+  <p><%= f.submit "Sign Up" %></p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

@@ -10,18 +10,10 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101024135153) do
+ActiveRecord::Schema.define(:version => 20101024134434) do
 
   create_table "languages", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "profiles", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "city"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -44,9 +36,16 @@ ActiveRecord::Schema.define(:version => 20101024135153) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.string   "username"
+    t.string   "city"
+    t.string   "github"
+    t.string   "twitter"
+    t.text     "description"
   end
 
+  add_index "users", ["city"], :name => "index_users_on_city"
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+  add_index "users", ["username"], :name => "index_users_on_username"
 
 end

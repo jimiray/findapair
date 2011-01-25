@@ -7,8 +7,17 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-<%= yield %>
-
+    <header>
+      <%= link_to "Sign Up", new_user_registration_path %> | 
+      <a href='/login'>Login</a>
+    </header>
+    <div id='content'>
+      <%= yield %>
+    </div>
+    <footer>
+      &copy; 2010 jim ray
+      <a href='/about'>About</a> | 
+      <a href='/contact'>Contact</a>
+    </footer>
 </body>
 </html>

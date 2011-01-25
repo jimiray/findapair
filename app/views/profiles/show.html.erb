@@ -1,9 +1,0 @@
-<h2>Profile for <%= @profile.name %></h2>
-<dl>
-  <% %w(github twitter description).each do |c| %>
-    <dt><%= capitalize(c) %></dt>
-    <dd><%= @profile.send(c) %></dd>
-  <% end %>
-  <dt>Languages:</dt>
-  <dd></dd>
-</dl>

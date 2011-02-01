@@ -1,0 +1,57 @@
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 0px 20px;
+  font-size: 12px;
+}
+
+header {
+  color: #111;
+  font-size: 0.9em;
+  text-align: right;
+}
+header a, header a:visited {
+  color: #111;
+}
+#content {
+  margin: 0px auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+  padding: 40px;
+  background: #dfdfdf;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+label {
+  font-size: 2.2em;
+  font-weight: bold;
+  display: block;
+}
+input {
+  font-size: 2.2em;
+  padding: 5px;
+  border: 1px solid #bbb;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+input.new {
+  color: #ccc;
+  width: 480px;
+}
+footer {
+  color: #ccc;
+  text-align:right; 
+  padding: 20px;
+  font-size: .8em;
+}
+footer a, footer a:visited {
+  color: #ccc;
+}
+a, a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+p.buttons { text-align: right; }
+p.buttons input {
+  border: 1px solid #000;
+  font-size: 18px;
+  padding: 5px;
+}

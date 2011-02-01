@@ -14,17 +14,7 @@ gem 'will_paginate'
 group :development, :test do
    gem 'rspec-rails'
    gem 'fixjour'
-   gem 'shoulda'
    gem 'webrat'
+   gem 'steak'
+   gem 'capybara'
 end
-
-group :cucumber do
-  gem 'fixjour'
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
-  gem 'cucumber'
-  gem 'rspec-rails'
-  gem 'launchy'    # So you can do Then show me the page
-end 
-

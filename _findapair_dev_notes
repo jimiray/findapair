@@ -1,0 +1,20 @@
+Access project via: http://findapair.local/profiles
+
+Start Posgres: postgres -D /usr/local/var/postgres &
+
+Start with local server (vs pasenger): rails server
+
+TODO:
+  - Setup HAML - http://davidrupp.blogspot.com/2010/05/using-haml-with-rails-30.htm
+  - Configure HAML
+  - Rewrite views to use HAML
+  
+ISSUES:
+  - Error message:
+  Could not find warden-0.10.7 in any of the sources (Bundler::GemNotFound)
+  Exception class:
+  PhusionPassenger::UnknownError
+  Application root:
+  /Users/jpowell/Dropbox/sites/software_craftsman/findapair
+  
+RVM Setup: .rvmrc = rvm ree-1.8.7-2010.02@findapair

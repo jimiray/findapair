@@ -8,10 +8,24 @@
 </head>
 <body>
     <header>
-      <%= link_to "Sign Up", new_user_registration_path %> | 
-      <a href='/login'>Login</a>
+      <% if user_signed_in? %>
+        <%= link_to "Sign Out", destroy_user_session_path, :id => "sign_out" %>
+      <% else %>
+        <%= link_to "Sign Up", new_user_registration_path %> | 
+        <%= link_to "Sign In", new_user_session_path, :id => "sign_in" %>
+      <% end %>
     </header>
     <div id='content'>
+         <% if flash[:notice] %>
+           <div id='flash'>
+             <%= flash[:notice] %>
+           </div>
+          <% end %>
+          <% if flash[:alert] %>
+           <div id='flash'>
+             <%= flash[:alert] %>
+           </div>
+          <% end %>
       <%= yield %>
     </div>
     <footer>

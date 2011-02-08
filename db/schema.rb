@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101024134434) do
+ActiveRecord::Schema.define(:version => 20110208204009) do
 
   create_table "languages", :force => true do |t|
     t.string   "name"
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(:version => 20101024134434) do
     t.string   "name"
     t.string   "username"
     t.string   "city"
-    t.string   "github"
-    t.string   "twitter"
+    t.string   "github",               :limit => 64
+    t.string   "twitter",              :limit => 64
     t.text     "description"
   end
 

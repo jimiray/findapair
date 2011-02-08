@@ -5,7 +5,7 @@ module NavigationHelpers
     "/"
   end
 
-  def signup
+  def signup_path
     "/users/sign_up"
   end
 

@@ -15,6 +15,10 @@
   <%= f.password_field :password_confirmation %></p>
   <p><%= f.label :city %><br />
     <%= f.text_field :city %></p>
+  <p><%= f.label :twitter %><br />
+    <%= f.text_field :twitter, :limit => 64 %></p>
+  <p><%= f.label :github %><br />
+    <%= f.text_field :github, :limit => 64 %></p>
   <p><%= f.submit "Sign Up" %></p>
 <% end %>
 

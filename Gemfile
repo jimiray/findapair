@@ -13,7 +13,8 @@ gem 'will_paginate'
 
 group :development, :test do
    gem 'rspec-rails'
-   gem 'fixjour'
+   gem 'factory_girl_rails'
+   gem 'shoulda'
    gem 'webrat'
    gem 'steak'
    gem 'capybara'

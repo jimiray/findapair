@@ -51,10 +51,12 @@ GEM
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    factory_girl (1.3.3)
+    factory_girl_rails (1.0.1)
+      factory_girl (~> 1.3)
+      railties (>= 3.0.0)
     ffi (0.6.3)
       rake (>= 0.8.7)
-    fixjour (0.5.3)
-      activerecord
     i18n (0.4.1)
     json_pure (1.4.6)
     mail (2.2.7)
@@ -102,6 +104,7 @@ GEM
       ffi (~> 0.6.3)
       json_pure
       rubyzip
+    shoulda (2.11.3)
     simple_form (1.2.2)
     steak (1.1.0)
       rspec (>= 1.3)
@@ -125,10 +128,11 @@ PLATFORMS
 DEPENDENCIES
   capybara
   devise
-  fixjour
+  factory_girl_rails
   pg
   rails (= 3.0.1)
   rspec-rails
+  shoulda
   simple_form
   steak
   webrat

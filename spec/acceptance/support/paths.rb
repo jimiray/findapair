@@ -9,6 +9,10 @@ module NavigationHelpers
     "/users/sign_up"
   end
 
+  def user_path username
+    "/~#{username}"
+  end
+
 end
 
 RSpec.configuration.include NavigationHelpers, :type => :acceptance

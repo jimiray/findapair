@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110208204009) do
+ActiveRecord::Schema.define(:version => 20110211194119) do
 
   create_table "languages", :force => true do |t|
     t.string   "name"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20110208204009) do
     t.string   "github",               :limit => 64
     t.string   "twitter",              :limit => 64
     t.text     "description"
+    t.string   "weapons"
   end
 
   add_index "users", ["city"], :name => "index_users_on_city"

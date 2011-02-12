@@ -23,6 +23,7 @@ feature "Signup", %q{
       fill_in "user_password_confirmation", :with => "test1234"
       fill_in "user_twitter", :with => "testcrobin"
       fill_in "user_github", :with => "testcrobin"
+      fill_in "user_weapons", :with => "C, C++, Ruby, Ruby on Rails"
       lambda do
         click_link_or_button "Sign Up"
       end.should change(User, :count).by(1)

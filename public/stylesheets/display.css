@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Verdana, sans-serif;
   padding: 0px 20px;
   font-size: 12px;
 }
@@ -55,3 +55,9 @@ p.buttons input {
   font-size: 18px;
   padding: 5px;
 }
+
+.user {}
+.user .avatar { float: left; width: 55px; }
+.user .info {margin-left: 84px;}
+.user .info h2 { margin: 0px; padding: 0px; font-size: 18px; }
+.user .info p { margin: 0px; font-size: 12px; }

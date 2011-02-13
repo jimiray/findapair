@@ -4,3 +4,7 @@
   .info
     %h2= user.name
     %p{:class => 'weapons'}= user.weapons
+    %p{:class => 'accounts'} 
+      = github(user)
+      %br
+      = twitter(user)

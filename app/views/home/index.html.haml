@@ -1,0 +1,5 @@
+%form{:action => '/users', :method => 'GET', :id => "search"}
+  %label{:for => "City"}
+  %input{:name => "city", :type => "text", :value => "City", :id => "city", :class => "new"}
+  %p{:class => "buttons"}
+    = submit_tag "Search"

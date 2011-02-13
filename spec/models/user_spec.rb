@@ -51,7 +51,7 @@ describe User do
 
     it "should have a gravatar url" do
       gid = Digest::MD5.hexdigest(@user.email.downcase)
-      @user.avatar_url.should == "http://gravatar.com/avatar/#{gid}.png?s=48"
+      @user.avatar_url.should == "http://gravatar.com/avatar/#{gid}.png?s=75"
     end
        
   end

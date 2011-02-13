@@ -16,12 +16,29 @@ class User < ActiveRecord::Base
     validates_length_of c, :maximum => 64
   end
 
+  def city=(c)
+    write_attribute :city, c.downcase
+  end
+
+  def city
+    read_attribute(:city).capitalize if !self.new_record?
+  end
+
+  def avatar_url
+    default_url = "/images/guest.png"
+    gravatar_id = Digest::MD5.hexdigest(email.downcase)
+    "http://gravatar.com/avatar/#{gravatar_id}.png?s=48"
+  end
+
+  def self.find_by_city(c, options={})
+    return all(:conditions => {:city => c.downcase}.merge(options))
+  end
+
   protected
 
   def self.find_for_database_authentication(conditions)
     login = conditions.delete(:login)
     where(conditions).where(["username = :value OR email = :value", { :value => login }]).first
   end
-
 
 end

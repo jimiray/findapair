@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title="Find A Pair"
+    = stylesheet_link_tag :all 
+    = javascript_include_tag 'jquery-1.5.min.js', 'application'
+    = csrf_meta_tag 
+  %body
+    %header
+      - if user_signed_in?
+        = link_to "Sign Out", destroy_user_session_path, :id => "sign_out" 
+      - else 
+        = link_to "Sign Up", new_user_registration_path 
+        = " | " 
+        = link_to "Sign In", new_user_session_path, :id => "sign_in" 
+    .content
+      - if flash[:notice]
+        .flash = flash[:notice]
+      - if flash[:alert]
+        .flash = flash[:alert]
+      = yield 
+    %footer
+      &copy; 2010 jim ray

@@ -13,6 +13,10 @@ module NavigationHelpers
     "/~#{username}"
   end
 
+  def city_path(city)
+   "/#{city}"
+  end
+
 end
 
 RSpec.configuration.include NavigationHelpers, :type => :acceptance

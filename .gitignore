@@ -5,4 +5,5 @@ tmp/**/*
 *.swp
 *.swo
 webrat.log
+./config/database.yml
 config/database.yml

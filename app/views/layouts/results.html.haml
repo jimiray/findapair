@@ -1,0 +1,54 @@
+!!!
+%html
+  %head
+    %title="Find A Pair"
+    = stylesheet_link_tag :all 
+    = javascript_include_tag 'jquery-1.5.min.js', 'application'
+    = csrf_meta_tag 
+    %link{:href => "http://fonts.googleapis.com/css?family=Irish+Growler:regular", :rel => "stylesheet", :type => "text/css"}
+  %body
+    %header
+      - if user_signed_in?
+        = link_to "Sign Out", destroy_user_session_path, :id => "sign_out" 
+      - else 
+        = link_to "Sign Up", new_user_registration_path 
+        = " | " 
+        = link_to "Sign In", new_user_session_path, :id => "sign_in"
+    #logo Find A Pair
+    #main
+      #mainContent
+        #sidebar
+          #share.module
+            %ul
+              %li
+                %span.saying
+                  %center PRACTICE MAKES PERMANENT
+              %hr
+                %li
+                  Find A Pair was created to help other aspiring
+                  %a{:href => "http://manifesto.softwarecraftsmanship.org/", :target => "_blank"} Software Craftsmen
+                  improve their development skills through the practice of
+                  = succeed "." do
+                    %b
+                      %i Pair Programming
+                %li Our focus is helping your find other like minded Developers in your area to Pair with.
+                %hr
+                  %li
+                    If you haven't tried Pairing before, learn how to
+                    = succeed "." do
+                      %a{:href => "http://www.growapair.me"} Grow A Pair
+                  %li A resource focused on helping people learn about this pragmatic component of effective Agile development.
+        %h2.top.clearfix
+          #timer
+            %b 3
+            possible pairs
+          #search_query
+            Results for
+            %b Denver
+        #results
+          %ul{:style => "border-top: 0"}
+            = yield
+          %p.clearleft
+    %p.clearer
+    %footer
+      &copy; 2010 jim ray

@@ -2,10 +2,12 @@ body {
   font-family: Verdana, sans-serif;
   padding: 0px 20px;
   font-size: 12px;
+  background-color: #fff;
+  margin: 0;
 }
 
 header {
-  color: #111;
+  color: #111;s
   font-size: 0.9em;
   text-align: right;
 }
@@ -23,8 +25,8 @@ header a, header a:visited {
   font-size: 75px;
   font-weight: 400;
   text-align: left;
-/*  margin-top: 70px;
-  margin-left: 70px;*/
+  margin-top: 70px;
+/*  margin-left: 70px;*/
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0em;
@@ -36,12 +38,13 @@ header a, header a:visited {
   margin: 0px auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  width: 500px;
+  width: 600px;
   padding: 40px;
-  background: #dfdfdf;
+/*  background: #dfdfdf;*/
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
+
 label {
   font-size: 2.2em;
   font-weight: bold;
@@ -81,3 +84,342 @@ p.buttons input {
 .user .info {margin-left: 84px;}
 .user .info h2 { margin: 0px; padding: 0px; font-size: 18px; }
 .user .info p { margin: 0px; font-size: 12px; }
+
+
+
+div, p, h1, h2, h3, form {
+  margin: 0;
+  padding: 0;
+}
+  
+/*form {
+  display: inline;
+}*/
+
+img {
+  border: 0;
+}
+  
+.clearer {
+  clear: both;
+}
+
+.clearleft {
+  clear: left;
+}
+
+.clearright {
+  clear: right;
+}
+  
+a:link {
+  color: #497bb6;
+}
+
+a:visited {
+  color: #497bb6;
+}
+
+#main {
+  background-color: #fff;
+}
+
+#mainContent {
+  width: 795px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*-- Seperating line --*/
+
+#results {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 10px;
+  margin-right: 180px;
+  width: 593px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  _width: 573px;
+}
+
+#results h2 {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+#timer, #topresults {
+  float: right;
+  width: 100px;
+  display: block;
+  text-align: right;
+  font-size: 13px;
+}
+
+
+#search_query {
+  float: left;
+  width: 450px;
+  display: block;
+  overflow: hidden;
+}
+
+#results ul {
+  list-style-type: none;
+  margin: -10px 0 0 0;
+  padding: 0;
+  border-top: 1px solid #eee;  
+}
+
+#results ul.thread  {
+  margin: 0;
+}
+
+/* IE hack for setting layout */
+#results ul div.thread { display: inline-block; }
+#results ul div.thread { display: block; }
+
+#results ul div.thread ul {
+  border-width: 0;
+}
+
+#results li {
+  margin: 0;
+  border-bottom: 1px dashed #ccc;
+  padding: 15px 5px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;        
+}
+
+#results li div.avatar {
+  float: left;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+}
+
+#results li div.avatar a {
+  text-decoration: none;
+}
+
+#results li div.avatar img {
+  width: 48px;
+  height: 48px;
+}
+
+#results li div.avatar a.from_av {
+  display: block;
+  width: 36px;
+  height: 36px;
+}
+
+#results li div.avatar a.to_av {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-left: 22px;
+  margin-top: -14px;
+}
+
+#results li div.avatar a.from_av img {
+  width: 36px;
+  height: 36px;
+}
+
+#results li div.avatar a.to_av img {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+}
+
+#results li.nested div.avatar {
+  float: left;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+}
+
+#results li.nested div.avatar img {
+  width: 36px;
+  height: 36px;  
+}
+
+#results  li .msg {
+  margin-left: 58px;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 2px;
+}
+
+#results li.nested .msg {
+  margin-left: 45px;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 3px;
+}
+
+#results li .msgtxt.translated {
+  background-color: #ffffcc;
+}
+
+#results li .info, #results li .debug {
+  margin-left: 58px;
+  color: #777;
+  font-size: 13px;
+}
+
+#results li .profile_info, #results li .debug {
+  text-align: right;
+/*  margin-left: 150px;*/
+  color: #777;
+  font-size: 13px;
+}
+
+#results li .location {
+  margin: 5px 0 5px 58px;
+  font-size: 13px;
+  color: #3d9438;
+}
+
+a {
+    /* text-decoration: none; */
+}
+
+#sidebar {
+  margin-top: 40px;	
+  width: 170px;
+  float: right;
+}
+
+#sidebar .module {
+  text-decoration:none;
+  background-color: #fff;
+  color: #777;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-top-left-radius: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  width: 225px;
+}
+
+#sidebar .module h3 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #000;
+}
+
+#sidebar #share ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#sidebar #share li {
+  margin: 0 0 10px 0;
+  padding: 0;
+    color: #000;
+}
+
+#sidebar #share li:last-child {
+  margin: 0;
+}
+
+#sidebar .list ul {
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#sidebar .list li {
+  margin: 0 0 5px 0;
+  padding: 0;
+    color: #777;
+}
+
+h2.top {
+  margin-top: 40px;
+  background: #f4f4f4;
+  font-size: 14px;
+  padding: 12px 14px 8px 14px;
+  width: 585px;
+  border: 1px solid #ccc;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: -3px;
+  font-weight: normal;
+  color: #666;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+}
+
+h3.type {
+  font-size: 14px;
+  padding: 4px 4px 10px 4px;
+  margin: 0 0 10px 0;
+}
+
+h3.type img {
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-top: -2px;
+}
+
+/* clearfix css */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+a {
+  text-decoration:none;
+}
+
+hr {
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;  
+  width: 50%;
+  color: #f00;
+  background-color: #e3e2e2;
+  height: 1px;
+}
+.saying {
+  text-align: right;
+}
+
+li.result:hover {
+background-color: #dfe9f2;
+}

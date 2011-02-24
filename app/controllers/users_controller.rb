@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   def index
     if params[:city]
       @users = User.all(:conditions => { :city => params[:city] })
+      render :layout => 'results'
     else
       flash[:error] = "You must provide a city"
       redirect_to root_path

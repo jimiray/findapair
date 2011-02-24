@@ -14,7 +14,8 @@
         = link_to "Sign Up", new_user_registration_path 
         = " | " 
         = link_to "Sign In", new_user_session_path, :id => "sign_in"
-    #logo Find A Pair
+    #logo
+      = link_to "Find A Pair", root_path
     #main
       #mainContent
         #sidebar
@@ -39,12 +40,8 @@
                       %a{:href => "http://www.growapair.me"} Grow A Pair
                   %li A resource focused on helping people learn about this pragmatic component of effective Agile development.
         %h2.top.clearfix
-          #timer
-            %b 3
-            possible pairs
           #search_query
-            Results for
-            %b Denver
+            %b Potential Pair
         #results
           %ul{:style => "border-top: 0"}
             = yield

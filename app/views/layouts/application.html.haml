@@ -14,7 +14,8 @@
         = link_to "Sign Up", new_user_registration_path 
         = " | " 
         = link_to "Sign In", new_user_session_path, :id => "sign_in"
-    #logo Find A Pair
+    #logo
+      = link_to "Find A Pair", root_path
     #content
       - if flash[:notice]
         .flash = flash[:notice]

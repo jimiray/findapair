@@ -1,30 +1,11 @@
 %li.result
   .avatar
-    %img{:alt => "headshot", :src => "./assets/obie.jpg"}
-  .msg
-    %h3
-      %a{:href => "#"} Obie Fernandez
-      %h3
+    = image_tag user.avatar_url
   .info
-    Languages: Ruby on Rails
-    %br
-      Pairing since 2006
-  .profile_info
+    %h2= user.name
+    %p{:class => 'weapons'}= user.weapons 
+  .profile_info	
     %a{:href => "#"}
-      %img{:alt => "Twitter", :src => "./assets/twitter.png"}/
+      %img{:alt => "Twitter", :src => "images/icons/twitter.png"}/
     %a{:href => "#"}
-      %img{:alt => "github", :src => "./assets/github.png"}/
-
-
-/ USERS-USERS PARTIAL
-
-/ .user{:id => "user-#{user.id}"} 
-/   .avatar
-/     = image_tag user.avatar_url
-/   .info
-/     %h2= user.name
-/     %p{:class => 'weapons'}= user.weapons
-/     %p{:class => 'accounts'} 
-/       = github(user)
-/       %br
-/       = twitter(user)
+      %img{:alt => "github", :src => "images/icons/github.png"}/

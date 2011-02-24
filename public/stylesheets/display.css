@@ -12,6 +12,26 @@ header {
 header a, header a:visited {
   color: #111;
 }
+
+#logo {
+  position:relative;
+  top:25px;
+  left:40px;
+  display:inline;
+  font-family: 'Irish Growler', serif;
+  text-shadow: 4px 4px 4px #ddd;
+  font-size: 75px;
+  font-weight: 400;
+  text-align: left;
+/*  margin-top: 70px;
+  margin-left: 70px;*/
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+
 #content {
   margin: 0px auto;
   margin-top: 100px;
@@ -57,7 +77,7 @@ p.buttons input {
 }
 
 .user {}
-.user .avatar { float: left; width: 55px; }
+.user .avatar { float: left; width: 55px; border: 1px coral solid; clear:both }
 .user .info {margin-left: 84px;}
 .user .info h2 { margin: 0px; padding: 0px; font-size: 18px; }
 .user .info p { margin: 0px; font-size: 12px; }

@@ -5,6 +5,7 @@
     = stylesheet_link_tag :all 
     = javascript_include_tag 'jquery-1.5.min.js', 'application'
     = csrf_meta_tag 
+    %link{:href => "http://fonts.googleapis.com/css?family=Irish+Growler:regular", :rel => "stylesheet", :type => "text/css"}
   %body
     %header
       - if user_signed_in?
@@ -12,7 +13,8 @@
       - else 
         = link_to "Sign Up", new_user_registration_path 
         = " | " 
-        = link_to "Sign In", new_user_session_path, :id => "sign_in" 
+        = link_to "Sign In", new_user_session_path, :id => "sign_in"
+    #logo Find A Pair
     #content
       - if flash[:notice]
         .flash = flash[:notice]

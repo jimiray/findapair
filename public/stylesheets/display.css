@@ -432,7 +432,8 @@ background-color: #dfe9f2;
      zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
      *display: inline;
      vertical-align: baseline;
-     margin: 0 2px;
+     margin-left:315px;
+     /*     margin: 0 2px;*/
      outline: none;
      cursor: pointer;
      text-align: center;
@@ -489,4 +490,3 @@ background-color: #dfe9f2;
      background: -moz-linear-gradient(top,  #0078a5,  #00adee);
      filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
 }
-

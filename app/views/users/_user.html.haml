@@ -3,8 +3,8 @@
     = image_tag user.avatar_url
   .info
     %h2= user.name
-    %a.button.blue.bigrounded{:href => "mailto:someone@yoursite.com?subject=Mail from Our Site"} Invite To Pair
-    %p{:class => 'weapons'}= user.weapons 
+    = mail_to user.email, "Invite To Pair", :subject => "Invitation to Pair Program", :class => "button blue bigrounded", :id => user.id
+    %p{:class => 'weapons'}= user.weapons
   .profile_info
     %a{:href => "#"}
       %img{:alt => "Twitter", :src => "images/icons/twitter.png"}/

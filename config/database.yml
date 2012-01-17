@@ -5,8 +5,8 @@ development:
   encoding: unicode
   database: findapair_development
   pool: 5
-  username: jpowell
-  password: aoe
+  username: findapair 
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -16,15 +16,15 @@ test: &test
   encoding: unicode
   database: findapair_test
   pool: 5
-  username: jpowell
+  username: findapair 
   password: aoe
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: findapair_development
+  database: findapair_production
   pool: 5
-  username: jpowell
+  username: findapair 
   password: aoe
 
 cucumber:

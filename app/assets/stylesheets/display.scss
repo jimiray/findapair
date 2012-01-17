@@ -2,17 +2,20 @@ body {
   font-family: Verdana, sans-serif;
   padding: 0px 20px;
   font-size: 12px;
-  background-color: #fff;
   margin: 0;
+  background: #293552;
+  background-image: url("bg.png");
+  background-repeat: repeat;
 }
 
 header {
-  color: #111;
-  font-size: 0.9em;
+  color: #fff;
+  font-size: 1.2em;
   text-align: right;
+  padding: 10px;
 }
 header a, header a:visited {
-  color: #111;
+  color: #fff;
 }
 
 #logo {
@@ -20,13 +23,12 @@ header a, header a:visited {
   top:25px;
   left:40px;
   display:inline;
-  font-family: 'Irish Growler', serif;
-  text-shadow: 4px 4px 4px #ddd;
+  font-family: 'Lobster', serif;
+  text-shadow: 2px 2px 2px #000;
   font-size: 85px;
   font-weight: 400;
   text-align: left;
   margin-top: 70px;
-/*  margin-left: 70px;*/
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0em;
@@ -34,13 +36,14 @@ header a, header a:visited {
   line-height: 1.2;
 }
 
+#logo a { color: #fff }
+
 #content {
   margin: 0px auto;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 600px;
   padding: 40px;
-  background: #dfdfdf;
   -moz-border-radius: 15px;
   border-radius: 15px;
 }
@@ -63,7 +66,7 @@ input.new {
 }
 footer {
   color: #ccc;
-  text-align:right; 
+  text-align:right;
   padding: 20px;
   font-size: .8em;
 }
@@ -89,7 +92,7 @@ div, p, h1, h2, h3, form {
   margin: 0;
   padding: 0;
 }
-  
+
 /*form {
   display: inline;
 }*/
@@ -97,7 +100,7 @@ div, p, h1, h2, h3, form {
 img {
   border: 0;
 }
-  
+
 .clearer {
   clear: both;
 }
@@ -109,7 +112,7 @@ img {
 .clearright {
   clear: right;
 }
-  
+
 a:link {
 /*  color: #497bb6;*/
   color: #d2c7c7;
@@ -176,7 +179,7 @@ a:visited {
   list-style-type: none;
   margin: -10px 0 0 0;
   padding: 0;
-  border-top: 1px solid #eee;  
+  border-top: 1px solid #eee;
 }
 
 #results ul.thread  {
@@ -196,7 +199,7 @@ a:visited {
   border-bottom: 1px dashed #ccc;
   padding: 15px 5px;
     overflow: hidden;
-    border-bottom: 1px solid #eee;        
+    border-bottom: 1px solid #eee;
 }
 
 #results li div.avatar {
@@ -249,7 +252,7 @@ a:visited {
 
 #results li.nested div.avatar img {
   width: 36px;
-  height: 36px;  
+  height: 36px;
 }
 
 #results  li .msg {
@@ -294,7 +297,7 @@ a {
 }
 
 #sidebar {
-  margin-top: 40px;	
+  margin-top: 40px;
   width: 170px;
   float: right;
 }
@@ -411,7 +414,7 @@ a {
 hr {
   border: 0;
   margin-top: 10px;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
   width: 50%;
   color: #f00;
   background-color: #e3e2e2;
@@ -455,7 +458,7 @@ background-color: #dfe9f2;
      position: relative;
      top: 1px;
 }
- 
+
 .bigrounded {
      -webkit-border-radius: 2em;
      -moz-border-radius: 2em;

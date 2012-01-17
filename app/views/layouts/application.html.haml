@@ -4,15 +4,15 @@
     %title="Find A Pair"
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
-    = csrf_meta_tag 
-    %link{:href => "http://fonts.googleapis.com/css?family=Irish+Growler:regular", :rel => "stylesheet", :type => "text/css"}
+    = csrf_meta_tag
+    %link{:href => "http://fonts.googleapis.com/css?family=Lobster|Fugaz+One", :rel => "stylesheet", :type => "text/css"}
   %body
     %header
       - if user_signed_in?
-        = link_to "Sign Out", destroy_user_session_path, :id => "sign_out" 
-      - else 
-        = link_to "Sign Up", new_user_registration_path 
-        = " | " 
+        = link_to "Sign Out", destroy_user_session_path, :id => "sign_out"
+      - else
+        = link_to "Sign Up", new_user_registration_path
+        = " | "
         = link_to "Sign In", new_user_session_path, :id => "sign_in"
     #logo
       = link_to "Find A Pair", root_path

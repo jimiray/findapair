@@ -7,3 +7,4 @@ tmp/**/*
 webrat.log
 config/database.yml
 .rvmrc
+.sass-cache/

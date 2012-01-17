@@ -7,6 +7,7 @@ gem 'devise'
 gem 'will_paginate'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'httparty'
 
 group :development, :test do
    gem 'rspec-rails'
@@ -15,6 +16,13 @@ group :development, :test do
    gem 'webrat'
    gem 'steak'
    gem 'capybara'
+   gem 'guard-rspec'
+   gem 'rb-fsevent'
+   #gem 'growl_notify'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 # Gems used only for assets and not required

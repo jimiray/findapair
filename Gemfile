@@ -11,7 +11,7 @@ gem 'httparty'
 
 group :development, :test do
    gem 'rspec-rails'
-   gem 'factory_girl_rails'
+   #gem 'factory_girl_rails'
    gem 'shoulda'
    gem 'webrat'
    gem 'steak'

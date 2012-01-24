@@ -18,6 +18,11 @@ header a, header a:visited {
   color: #fff;
 }
 
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
 #logo {
   position:relative;
   top:25px;
@@ -40,25 +45,31 @@ header a, header a:visited {
 
 #content {
   margin: 0px auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  width: 600px;
-  padding: 40px;
+  margin-top: 20px;
+  width: 900px;
   -moz-border-radius: 15px;
   border-radius: 15px;
+  background: #fff;
+  padding: 40px;
 }
 
 label {
-  font-size: 2.2em;
+  font-size: 1.3em;
   font-weight: bold;
-  display: block;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  padding: 2px;
+  display: inline-block;
 }
+
 input {
-  font-size: 2.2em;
+  font-size: 1.6em;
   padding: 5px;
   border: 1px solid #bbb;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  margin-top: 0px;
+  margin-bottom: 7px;
 }
 input.new {
   color: #ccc;
